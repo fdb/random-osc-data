@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": 6,
+      "name": "Out",
+      "type": "core.out",
+      "x": 60.128187592598636,
+      "y": 140.83925839071503
+    },
+    {
+      "id": 7,
+      "name": "Constant",
+      "type": "image.constant",
+      "x": 70.71107079811624,
+      "y": 41.92852257938201,
+      "values": {
+        "color": {
+          "type": "expression",
+          "expression": "[osc(\"/random\", 0),0,0,1]"
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "outNode": 7,
+      "outPort": "out",
+      "inNode": 6,
+      "inPort": "in"
+    }
+  ],
+  "settings": {
+    "oscEnabled": true,
+    "oscPort": 8000
+  },
+  "types": []
+}
